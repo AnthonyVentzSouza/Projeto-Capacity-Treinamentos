@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/stylesite.css">
+    <title>Site Capacity</title>
+
+    <style>
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1280' height='720' preserveAspectRatio='none' viewBox='0 0 1280 720'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1184%26quot%3b)' fill='none'%3e%3crect width='1280' height='720' x='0' y='0' fill='url(%23SvgjsLinearGradient1185)'%3e%3c/rect%3e%3cpath d='M 0%2c136 C 85.4%2c167.6 256.2%2c311.2 427%2c294 C 597.8%2c276.8 683.4%2c43.6 854%2c50 C 1024.6%2c56.4 1194.8%2c270.8 1280%2c326L1280 720L0 720z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c579 C 128%2c548 384%2c410.4 640%2c424 C 896%2c437.6 1152%2c602.4 1280%2c647L1280 720L0 720z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1184'%3e%3crect width='1280' height='720' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='10.94%25' y1='-19.44%25' x2='89.06%25' y2='119.44%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1185'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: #fff;
+}
+
+.container-footer{
+    width: 72rem;
+    height: 200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-footer p{
+    margin: 0;
+  }
+
+/* .email-numero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email-numero p:first-child{
+    margin-block-end: 5px;
+} */
+
+.socials{
+    padding: 15px;
+    max-width: 72rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a i{
+    font-size: 40px;
+}
+
+.socials{
+    display: flex;
+    gap: 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+}
+
+.column a{
+    transition: 0.3s ease-in-out;
+}
+
+.column h2{
+    margin-bottom: 20px;
+}
+
+.column a:hover{
+    color: #a5a4a4;
+}
+
+
+
+
+
+    </style>
+
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.png.png" alt="Logo da empresa" width="100px">CapacityTreinamentos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Entrar
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="loginadm.php">Login Administrador</a></li>
+                      <li><a class="dropdown-item" href="logininstrutor.php">Login Instrutor</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            </div>
+          </nav>
+
+          <div class="container" style="border: none;">
+            <div class="principal">
+              <div class="lado-esquerdo">
+                <h1>Capacity Treinamentos</h1>
+                <img src="img/fita.png" alt="" width="100%" height="30px">
+
+                <p>Uma empresa que te capacita para os desafios da vida profissional e pessoal com segurança e confiança.</p>
+
+              </div>
+              <div class="lado-direito">
+                <img src="img/logo.png.png" alt="" width="600px">
+
+              </div>
+            </div>
+
+            <div class="sobre">
+              <div class="conteudo-sobre">
+                <div class="linha"></div>
+
+                <h1>Sobre nós</h1>
+                <p>A Capacity Treinamentos é uma empresa formada por profissionais altamente qualificados, vem atuando desde 2020 com uma ampla experiência em vários ramos de atividade.</p>
+
+                <p>Nosso objetivo é oferecer todo suporte aos clientes em Saúde e Segurança do Trabalho, acreditamos que a conscientização pode ser alcançada através dos treinamentos, uma 
+                  ferramenta primordial na prevenção de acidentes.</p> 
+                  
+                <p>A equipe da Capacity é formada por Técnicos em Segurança, Bombeiro Civil, Supervisor de Trabalho em altura, parceiros na Engenharia de Segurança do 
+                  Trabalho e Engenheiros Elétricos.</p>
+
+                  <div class="button-sobre">
+
+                    <a href="cursos.html"><button>Contrate-nos</button></a>
+
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="container-footer">
+            <div class="column">
+                
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Empresa</h2>
+                <a href="#">Negócios</a>
+                <a href="#">Parceria</a>
+                <a href="#">Rede</a>
+            </div>
+            <div class="column">
+                <h2>Sobre nós</h2>
+                <a href="#">Midias</a>
+                <a href="#">Canais</a>
+            </div>
+            <div class="column">
+                <h2>Contato</h2>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos e Condições</a>
+            </div>
+          </div>
+          </footer>
+
+
+
+
+
+
+
+          <!-- <footer>
+            <div class="container-footer">
+              <div class="email-numero">
+                <p>Email: capacitytreiamentos@mail.com</p>
+                <p>Número: <a href="">(41) 99999-9999</a></p>
+              </div>
+              <div class="desenvolvedores">
+                <p>Desenvolvido por Anthony e Gabriel</p>
+              </div>
+            </div>
+            <div class="redes-sociais">
+              <div class="social">
+                <a href="https://www.instagram.com/capacity_treinamentos/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://m.facebook.com/profile.php/?id=61553071718660" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </footer> -->
+        
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+  </html>
